@@ -1,0 +1,16 @@
+logging:
+  level:
+#    org.apache.http: DEBUG
+#    org.apache.http.wire: DEBUG
+
+    org.apache.http.impl.conn.PoolingHttpClientConnectionManager: DEBUG
+    org.apache.http.impl.conn.DefaultHttpClientConnectionOperator: DEBUG
+
+management:
+  security:
+    enabled: false
+
+server:
+  jetty:
+    accesslog:
+      enabled: true
