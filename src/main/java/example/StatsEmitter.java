@@ -23,7 +23,7 @@ public class StatsEmitter {
         this.connectionManager = poolingConnManager;
     }
 
-    
+
     @Scheduled(fixedRate = 5000)
     public void printPoolStats() {
         PoolStats totalStats = connectionManager.getTotalStats();
